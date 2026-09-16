@@ -23,7 +23,7 @@ export const profile = {
   location: "Surabaya, Jawa Timur",
   email: "alfaizazam@gmail.com",
   phone: "0821-3914-8162",
-  resumeUrl: "https://drive.google.com/file/d/1gVVDPAki2qvaMmO3VZYAuMS3hH4tZvEK/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/1cPFx92eZc-f1k2dS0Q3Gp84MSeDRnQ-9/view?usp=sharing",
   socials: [
     { label: "LinkedIn", url: "https://linkedin.com/in/al-faiz-azzam-aryaputra" },
     { label: "GitHub", url: "https://github.com/alfaizazzam" },
