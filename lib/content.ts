@@ -23,7 +23,7 @@ export const profile = {
   location: "Surabaya, Jawa Timur",
   email: "alfaizazam@gmail.com",
   phone: "0821-3914-8162",
-  resumeUrl: "https://drive.google.com/file/d/1cPFx92eZc-f1k2dS0Q3Gp84MSeDRnQ-9/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/14s0_m4NQscIle6p5EuLGi2A8wdtUlPZM/view?usp=sharing",
   socials: [
     { label: "LinkedIn", url: "https://linkedin.com/in/al-faiz-azzam-aryaputra" },
     { label: "GitHub", url: "https://github.com/alfaizazzam" },
@@ -47,6 +47,22 @@ export type Training = {
 };
 
 export const trainings: Training[] = [
+  {
+    title: "Master Lookup Microsoft Excel",
+    organizer: "AmanExcel",
+    period: "Sep 2026 - Sep 2026",
+    description:
+      "Pelatihan penerapan fungsi lookup dan validasi data (VLOOKUP, HLOOKUP, INDEX+MATCH, XLOOKUP, IF, IFERROR) di Excel untuk pengolahan data.",
+    url: "https://drive.google.com/file/d/13SlTv1iALU-lz7RSWjWIKSlbC9qVFmef/view?usp=sharing",
+  },
+  {
+    title: "Microsoft Excel Basic Formula",
+    organizer: "MySkill",
+    period: "Sep 2026 - Sep 2026",
+    description:
+      "Pelatihan formatting data serta rumus dasar Excel (SUM, AVERAGE, PROPER, VLOOKUP, CONCAT) dan teknik filtering-sorting untuk mengolah, mencocokkan, dan merapikan data secara lebih cepat dan akurat.",
+    url: "https://drive.google.com/file/d/1YHNA9-pmxpMdpwI98SQj3crmXnAQAZqs/view?usp=sharing",
+  },
   {
     title: "Bootcamp Data Analyst",
     organizer: "KarirNex",
@@ -88,7 +104,7 @@ export const skillGroups = [
   },
   {
     category: "Soft Skill",
-    items: ["Analisis Data", "Exploratory Data Analyst (EDA)", "Problem Solving", "Critical Thinking", "Teamwork","Team Leadership"],
+    items: ["Analisis Data", "Exploratory Data Analyst (EDA)", "PivotTable", "XLOOKUP", "VLOOKUP", "HLOOKUP", "INDEX+MATCH", "Problem Solving", "Critical Thinking", "Teamwork","Team Leadership"],
   },
 ];
 
