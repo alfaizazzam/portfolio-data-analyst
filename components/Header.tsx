@@ -1,13 +1,21 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { profile } from "@/lib/content";
+import { profile, recommendationLetters } from "@/lib/content";
 
 const navItems = [
   { href: "#keahlian", label: "Keahlian" },
   { href: "#proyek", label: "Proyek" },
   { href: "#pengalaman", label: "Pengalaman" },
   { href: "#pelatihan", label: "Pelatihan" },
+  { href: "#pendidikan", label: "Pendidikan" },
+  // "Rekomendasi" hanya ikut ditampilkan kalau recommendationLetters di
+  // lib/content.ts sudah diisi minimal 1 data -- section-nya sendiri
+  // juga baru dirender saat itu (lihat components/Recommendations.tsx),
+  // jadi menu ini otomatis sinkron tanpa perlu diubah manual nanti.
+  ...(recommendationLetters.length > 0
+    ? [{ href: "#rekomendasi", label: "Rekomendasi" }]
+    : []),
   { href: "#kontak", label: "Kontak" },
 ];
 

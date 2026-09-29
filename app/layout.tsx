@@ -16,8 +16,24 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: `${profile.name} — ${profile.role}`,
+  metadataBase: new URL("https://portfolio-alfaiz-azzam.vercel.app"),
+  title: `${profile.name} · ${profile.role}`,
   description: profile.summary,
+  openGraph: {
+    title: `${profile.name} · ${profile.role}`,
+    description: profile.summary,
+    url: "https://portfolio-alfaiz-azzam.vercel.app",
+    siteName: profile.name,
+    images: [{ url: "/images/og-image.png", width: 1200, height: 630 }],
+    locale: "id_ID",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${profile.name} · ${profile.role}`,
+    description: profile.summary,
+    images: ["/images/og-image.png"],
+  },
 };
 
 export default function RootLayout({

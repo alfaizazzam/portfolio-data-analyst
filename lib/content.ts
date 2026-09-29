@@ -6,7 +6,7 @@
 
 export const profile = {
   name: "Al-Faiz Azzam Aryaputra",
-  role: "Data Analyst",
+  role: "Data Analytics",
   tagline: "Mengubah data mentah menjadi sebuah insight",
   summary:
     "Fresh Graduate Sistem Informasi dengan minat pada Data Analytics yang memiliki pengalaman dalam menangani proyek analisis data menggunakan Python, Ms. Excel, dan Power BI melalui proyek akademik, studi Independen, serta berbagai pelatihan.",
@@ -33,9 +33,9 @@ export const profile = {
 
 export const stats = [
   { value: 3, suffix: ".85", label: "IPK" },
-  { value: 3, suffix: "", label: "Project Data" },
+  { value: 4, suffix: "", label: "Project Data" },
   { value: 1, suffix: "", label: "Penghargaan" },
-  { value: 3, suffix: ".8", label: "Tahun Kuliah" },
+  { value: 1, suffix: "", label: "Surat Rekomendasi" },
 ];
 
 export type Training = {
@@ -47,6 +47,14 @@ export type Training = {
 };
 
 export const trainings: Training[] = [
+  {
+    title: "Bootcamp Kilat (BooKil) Microsoft Excel",
+    organizer: "Harisenin.com",
+    period: "Sep 2026 - Sep 2026",
+    description:
+      "Pelatihan rumus logika dan Lookup Excel (IF, COUNTIF, VLOOKUP, XLOOKUP) untuk menyusun kondisi bertingkat serta mengategorikan data secara otomatis berdasarkan nilai ambang batas.",
+    url: "https://drive.google.com/file/d/1n-QAUPhU_P4tRhevxNc9nd2HAjOw8NCA/view?usp=sharing",
+  },
   {
     title: "Master Lookup Microsoft Excel",
     organizer: "AmanExcel",
@@ -60,7 +68,7 @@ export const trainings: Training[] = [
     organizer: "MySkill",
     period: "Sep 2026 - Sep 2026",
     description:
-      "Pelatihan formatting data serta rumus dasar Excel (SUM, AVERAGE, PROPER, VLOOKUP, CONCAT) dan teknik filtering-sorting untuk mengolah, mencocokkan, dan merapikan data secara lebih cepat dan akurat.",
+      "Pelatihan formatting data serta rumus Excel (SUM, AVERAGE, PROPER, VLOOKUP, CONCAT) dan teknik filtering-sorting untuk mengolah, mencocokkan, dan merapikan data secara lebih cepat dan akurat.",
     url: "https://drive.google.com/file/d/1YHNA9-pmxpMdpwI98SQj3crmXnAQAZqs/view?usp=sharing",
   },
   {
@@ -312,5 +320,39 @@ export const certifications: Certification[] = [
     issuer: "MIKTI",
     year: "2024",
     url: "https://drive.google.com/file/d/1nMy7fzuZyLhApjqcpa7FgO1cAm4V-7oM/view?usp=sharing",
+  },
+];
+
+export type RecommendationLetter = {
+  // Nama pemberi rekomendasi.
+  name: string;
+  // Jabatan pemberi rekomendasi & institusinya, mis. "Manager, MIKTI"
+  // atau "Dosen Pembimbing Skripsi, UPN Veteran Jawa Timur".
+  role: string;
+  // Kapan surat ini dikeluarkan, mis. "Des 2024".
+  period: string;
+  // Opsional: cuplikan singkat isi surat (1-2 kalimat), ditampilkan
+  // miring seperti kutipan. Hapus baris ini kalau tidak ingin
+  // menampilkan cuplikan.
+  excerpt?: string;
+  // Opsional: link ke file surat asli (PDF/scan). Taruh file di
+  // public/recommendations/nama-file.pdf lalu isi url dengan
+  // "/recommendations/nama-file.pdf", atau pakai link Google Drive
+  // seperti pada trainings/certifications. Hapus baris ini kalau
+  // belum ada file suratnya.
+  url?: string;
+};
+
+// Section ini otomatis tersembunyi dari halaman utama selama array di
+// bawah masih kosong. Begitu kamu isi minimal 1 data, section "Surat
+// Rekomendasi" akan langsung muncul di halaman utama tanpa perlu ubah
+// apa pun di file komponen.
+export const recommendationLetters: RecommendationLetter[] = [
+  {
+    name: "Nugroho Hardiyanto, S.E., M.Si., CPM",
+    role: "Direktur PT. Ebiz Karisma Internasional",
+    period: "Sep 2026",
+    excerpt: "Surat Rekomendasi Kerja Keahlian Data Analyst",
+    url: "https://drive.google.com/file/d/1SWV2Q2eJgIi4xEZhWwYSpMIGE5LVsID2/view?usp=sharing",
   },
 ];
