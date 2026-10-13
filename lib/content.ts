@@ -22,8 +22,8 @@ export const profile = {
   photo: "/images/profile_Faiz.png",
   location: "Surabaya, Jawa Timur",
   email: "alfaizazam@gmail.com",
-  phone: "0821-3914-8162",
-  resumeUrl: "https://drive.google.com/file/d/14s0_m4NQscIle6p5EuLGi2A8wdtUlPZM/view?usp=sharing",
+  phone: "082139148162",
+  resumeUrl: "https://drive.google.com/file/d/1U8hIJiJf45MyJJ2ZYfC1zN1QyZR5H0Ps/view?usp=sharing",
   socials: [
     { label: "LinkedIn", url: "https://linkedin.com/in/al-faiz-azzam-aryaputra" },
     { label: "GitHub", url: "https://github.com/alfaizazzam" },
@@ -33,9 +33,9 @@ export const profile = {
 
 export const stats = [
   { value: 3, suffix: ".85", label: "IPK" },
-  { value: 4, suffix: "", label: "Project Data" },
-  { value: 1, suffix: "", label: "Penghargaan" },
-  { value: 1, suffix: "", label: "Surat Rekomendasi" },
+  { value: 3, suffix: ".8", label: "Tahun Kuliah" },
+  { value: 5, suffix: "", label: "Project Data" },
+  { value: 2, suffix: "", label: "Surat Rekomendasi" },
 ];
 
 export type Training = {
@@ -47,6 +47,22 @@ export type Training = {
 };
 
 export const trainings: Training[] = [
+  {
+    title: "Short Class Power BI Dashboard Specialist",
+    organizer: "KarirNex",
+    period: "Sep 2026 - Sep 2026",
+    description:
+      "Pelatihan Power BI yang meliputi Power Query, data model, DAX, dan desain dashboard di Power BI dengan studi kasus data penjualan bioskop",
+    url: "https://drive.google.com/file/d/1HFqokmen9QwNVt3-JR2CSR0kob-FQbq2/view?usp=drive_link",
+  },
+  {
+    title: "Pelatihan Dasar Admin Perkantoran: Menguasai Excel untuk Mengelola Inventaris dan Fasilitas Kantor",
+    organizer: "Talenesia",
+    period: "Sep 2026 - Sep 2026",
+    description:
+      "Pelatihan Excel untuk admin perkantoran (SUM, AVERAGE, IF, SUMIF, VLOOKUP, HLOOKUP) dengan studi kasus pengelolaan stok inventaris, fasilitas, dan masa kedaluwarsa barang.",
+    url: "https://drive.google.com/file/d/1I3qMgoEB36-7iJN6JJZVTchMBBkYJ4lw/view?usp=sharing",
+  },
   {
     title: "Bootcamp Kilat (BooKil) Microsoft Excel",
     organizer: "Harisenin.com",
@@ -108,11 +124,11 @@ export const skillGroups = [
   },
   {
     category: "Tools",
-    items: ["Microsoft Excel", "Google Sheets", "Google Colab", "Google Big Query", "Power BI"],
+    items: ["Microsoft Excel (PivotTable, XLOOKUP, VLOOKUP, HLOOKUP, INDEX+MATCH, SUM, AVERAGE, MAX, MIN, IF, SUMIF, COUNTIF)", "Google Sheets", "Google Colab", "Google Big Query", "Power BI"],
   },
   {
     category: "Soft Skill",
-    items: ["Analisis Data", "Exploratory Data Analyst (EDA)", "PivotTable", "XLOOKUP", "VLOOKUP", "HLOOKUP", "INDEX+MATCH", "Problem Solving", "Critical Thinking", "Teamwork","Team Leadership"],
+    items: ["Analisis Data", "Exploratory Data Analyst (EDA)", "Problem Solving", "Critical Thinking", "Teamwork","Team Leadership"],
   },
 ];
 
@@ -143,6 +159,29 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "movie-sales-analytics-dashboard",
+    title: "Movie Sales Analytics: Dashboard Interaktif Penjualan Tiket Bioskop 2025",
+    period: "2026",
+    tags: ["Power BI", "Power Query", "DAX", "Data Modeling"],
+    problem:
+      "Sebagai Data Analyst pada sebuah perusahaan bioskop, diberikan data transaksi dari enam studio yang tersimpan di file terpisah beserta data master film, seluruhnya masih berupa raw data. Management membutuhkan dashboard interaktif untuk memahami pendapatan, transaksi, penjualan tiket, performa film, serta perilaku transaksi (channel, metode pembayaran, dan status), tetapi data harus dibersihkan dan digabungkan terlebih dahulu agar siap dianalisis.",
+    approach:
+      "Pengerjaan dalam dua tahap. Tahap pertama, menyiapkan data dengan Power Query: menggabungkan 6 file studio memakai Get Data from Folder, menstandarkan tipe data, membuat kolom customer_name, Movie ID dengan format MV-XXX, dan seat_number, memisahkan kolom judul|genre dan melakukan Unpivot rating pada Movie Master, lalu merge Left Outer berdasarkan movie_id dan memvalidasi hasilnya lewat 8 pertanyaan validasi data. Tahap kedua, membangun data model di Power BI melalui relasi dengan tabel Channel Mapping dan Payment Mapping serta measure DAX untuk Total Revenue, Total Transaction, Total Tickets Sold, Average Transaction Value, Completed Transaction, Completion Rate, kemudian menyusun dashboard dengan alur KPI, tren, breakdown, hingga detail transaksi, dilengkapi 7 slicer dan seluruh status transaksi agar completion rate bisa dihitung.",
+    impact:
+      "Menghasilkan pipeline data yang mengubah 6 file mentah menjadi satu dataset siap analisis, serta dashboard interaktif yang membantu management memantau pendapatan, tiket, performa film, channel, metode pembayaran, dan status transaksi secara mandiri lewat filter, tanpa mengolah data mentah secara manual.",
+    results: [
+      "Dari 20.000 transaksi pendapatan Rp3,84 miliar dengan rata-rata Rp192.164 per transaksi dan completion rate 93,47%; setelah divalidasi di Power Query, 18.694 transaksi Paid menyumbang penjualan Rp3,59 miliar, sementara 1.306 transaksi (6,53%) berstatus cancelled atau refund",
+      "Pendapatan antar film sangat merata: Speed Beyond Limit (genre Aksi) menjadi film terlaris dengan Rp395,27 juta, dan kelima film teratas hanya berada pada rentang Rp384,81 juta hingga Rp395,27 juta (sekitar 51% dari total pendapatan), sehingga pendapatan tidak bergantung pada satu film saja",
+      "Channel Online (Aplikasi/Website Karirnex) menyumbang Rp2,22 miliar atau 61,9% dari penjualan Paid, jauh di atas Box Office offline sebesar Rp1,37 miliar (38,1%). Untuk pembayaran non-tunai mendominasi dengan dipimpin QRIS (3.407 transaksi), Kartu Debit/Kredit (3.364), dan GoPay (3.335), sedangkan Tunai hanya sekitar 6% (1.191 transaksi)",
+      "Pendapatan harian relatif stabil sepanjang periode, dengan lonjakan di awal dan penurunan di akhir",
+    ],
+    image: "/images/projects/dashboard_cinema.png",
+    gallery: [
+      "/images/projects/dashboard_mobil_data_model.png",
+      "/images/projects/dashboard_mobil_merge.png",
+    ],
+  },
+  {
     slug: "automotive-sales-analytics-dashboard",
     title: "Automotive Sales Dashboard: Performa Penjualan Mobil 2025",
     period: "2026",
@@ -159,7 +198,7 @@ export const projects: Project[] = [
       "Metode pembayaran Kredit mendominasi 50,4% nilai penjualan (naik jadi 63,5% jika digabung dengan skema Kredit + Trade In), sementara 10,34% transaksi gagal terealisasi (542 cancelled, 492 refund) yang berpotensi jadi kebocoran pendapatan cukup besar mengingat nilai transaksi otomotif per unit yang tinggi",
       "Merumuskan 3 key insights untuk management diantaranya risiko konsentrasi revenue pada kategori SUV, ketergantungan tinggi terhadap skema pembiayaan kredit yang rentan terhadap kebijakan suku bunga eksternal, dan potensi kehilangan pendapatan dari transaksi yang gagal terealisasi yang perlu ditelusuri penyebabnya",
     ],
-    image: "/images/projects/dasboard_mobil.png",
+    image: "/images/projects/dashboard_mobil.png",
     gallery: [
     ],
   },
@@ -349,10 +388,17 @@ export type RecommendationLetter = {
 // apa pun di file komponen.
 export const recommendationLetters: RecommendationLetter[] = [
   {
-    name: "Nugroho Hardiyanto, S.E., M.Si., CPM",
+    name: "Nugroho Hardiyanto, S.E., M.Si., CPM (Asia)",
     role: "Direktur PT. Ebiz Karisma Internasional",
     period: "Sep 2026",
     excerpt: "Surat Rekomendasi Kerja Keahlian Data Analyst",
     url: "https://drive.google.com/file/d/1SWV2Q2eJgIi4xEZhWwYSpMIGE5LVsID2/view?usp=sharing",
+  },
+   {
+    name: "Nugroho Hardiyanto, S.E., M.Si., CPM (Asia)",
+    role: "Direktur PT. Ebiz Karisma Internasional",
+    period: "Okt 2026",
+    excerpt: "Surat Rekomendasi Kerja Keahlian Data Analyst Power BI",
+    url: "https://drive.google.com/file/d/1e_cWovhrqsPrkk1aLnxSJNCEADjLG64a/view?usp=sharing",
   },
 ];
