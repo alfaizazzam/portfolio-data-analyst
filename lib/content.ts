@@ -9,7 +9,7 @@ export const profile = {
   role: "Data Analytics",
   tagline: "Mengubah data mentah menjadi sebuah insight",
   summary:
-    "Fresh Graduate Sistem Informasi dengan minat pada Data Analytics yang memiliki pengalaman dalam menangani proyek analisis data menggunakan Python, Ms. Excel, dan Power BI melalui proyek akademik, studi Independen, serta berbagai pelatihan.",
+    "Fresh Graduate Sistem Informasi UPN “Veteran” Jawa Timur dengan minat pada Data Analytics yang memiliki pengalaman dalam menangani proyek analisis data menggunakan Ms. Excel, SQL, dan Python, serta divisualisasikan menggunakan Power BI, Tableau, dan Data Studio (Looker Studio) melalui proyek akademik, studi Independen, serta berbagai pelatihan.",
   // Ganti dengan foto kamu sendiri (ganti file yang direferensikan di
   // path di bawah, rasio potret mis. 800x1000px hasilnya paling rapi).
   // Ada gambar dekoratif (public/images/profile-bg.jpg) yang otomatis
