@@ -23,7 +23,7 @@ export const profile = {
   location: "Surabaya, Jawa Timur",
   email: "alfaizazam@gmail.com",
   phone: "082139148162",
-  resumeUrl: "https://drive.google.com/file/d/1U8hIJiJf45MyJJ2ZYfC1zN1QyZR5H0Ps/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/1iZyGd0TpT3mzTJD7LaY1uKQrZAV6zsRH/view?usp=sharing",
   socials: [
     { label: "LinkedIn", url: "https://linkedin.com/in/al-faiz-azzam-aryaputra" },
     { label: "GitHub", url: "https://github.com/alfaizazzam" },
@@ -281,7 +281,7 @@ export const projects: Project[] = [
     slug: "automotive-sales-analytics-dashboard",
     title: "Automotive Sales Dashboard: Performa Penjualan Mobil 2025",
     period: "2026",
-    tags: ["Ms. Excel", "Power BI", "DAX", "Data Visualization"],
+    tags: ["Ms. Excel", "Power BI", "Power Query", "DAX", "Data Visualization"],
     problem:
       "Sebagai Data Analyst pada sebuah perusahaan otomotif, diberikan raw data transaksi penjualan kendaraan skala nasional sepanjang tahun 2025. Management membutuhkan dashboard penjualan interaktif untuk memahami performa penjualan, transaksi, produk, cabang, metode pembayaran, dan status transaksi, serta bisa melakukan analisis mendalam secara mandiri menggunakan filter/slicer tanpa bergantung pada laporan manual.",
     approach:
@@ -302,7 +302,7 @@ export const projects: Project[] = [
     slug: "dashboard-penjualan-elektronik",
     title: "Dashboard Penjualan Elektronik: Analisis Performa Kota Surabaya 2025",
     period: "2026",
-    tags: ["Ms. Excel", "Pivot Table", "Power BI"],
+    tags: ["Ms. Excel", "Pivot Table", "Power Query", "Power BI"],
     problem:
       "Dari data transaksi penjualan elektronik, Surabaya tercatat sebagai kota dengan kinerja penjualan tertinggi di Jawa Timur pada 2025 dan terus meningkat dibanding tahun sebelumnya. Tetapi belum ada analisis mendalam soal pola transaksi, profitabilitas, dan faktor pendorong performa tersebut, sehingga insight-nya belum bisa dimanfaatkan untuk menyusun strategi penjualan yang lebih tepat.",
     approach:
@@ -427,7 +427,7 @@ export const experience: ExperienceItem[] = [
     location: "Internship - Studi Independen MSIB Program",
     bullets: [
       "Merumuskan problem statement dan objective terukur melalui analisis root cause, kemudian menyusun hypothesis prioritization beserta rekomendasi untuk mendukung pengambilan keputusan berbasis data.",
-      "Melakukan data wrangling dan data cleansing menggunakan Python, dilanjutkan exploratory data analysis melalui visualisasi untuk mengidentifikasi pola dan korelasi antar variabel.",
+      "Mengumpulkan 8.000+ data berita dan media sosial lewat web scraping, lalu melakukan data cleansing dan exploratory data analysis (EDA) menggunakan Python untuk mengidentifikasi pola sentimen publik.",
       "Memimpin tim beranggotakan 6 orang dalam capstone project, membagi tugas sesuai kompetensi masing-masing anggota mulai dari pengumpulan data hingga presentasi insight kepada mentor program.",
     ],
   },
